@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react'
 import MySwiper from './MySwiper'
-import PhotosContext from '../context/photos/PhotosContext'
+import {PhotosContext} from '../context/photos/PhotosContextProvider'
 import NavbarContext from '../context/navbar/NavbarContext'
 import MemberItem from './MemberItem'
 

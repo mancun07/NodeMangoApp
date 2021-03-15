@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import PhotosContext from './PhotosContext'
+import React, { useState, createContext } from 'react'
+// import PhotosContext from './PhotosContext'
 import {v4} from 'uuid'
 import photo1 from '../../img/about1.jpg' // relative path to image 
 import photo2 from '../../img/about2.jpg' // relative path to image 
@@ -15,7 +15,9 @@ import member2 from '../../img/maxim.jpg' // relative path to image
 import member3 from '../../img/dima.jpg' // relative path to image
 import member4 from '../../img/andrew.jpg' // relative path to image
 
-const PhotosState = (props) => {
+export const PhotosContext = createContext();
+
+const PhotosContextProvider = (props) => {
     const [photos, setPhotos] = useState(
         {
             gallery: 
@@ -51,4 +53,4 @@ const PhotosState = (props) => {
  )
 }
 
-export default PhotosState
+export default PhotosContextProvider
