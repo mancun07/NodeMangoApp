@@ -1,6 +1,6 @@
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import NewsState from './context/news/NewsState'
+import NewsContextProvider from './context/news/NewsContextProvider'
 import PhotosState from './context/photos/PhotosState'
 import VideoState from './context/video/VideoState'
 import NavbarState from './context/navbar/NavbarState'
@@ -19,7 +19,7 @@ import SingleNews from './components/SingleNews'
 function App() {
   return (
     <NavbarState>
-    <NewsState>
+    <NewsContextProvider>
     <PhotosState>
     <VideoState>
     <div className="App">
@@ -39,7 +39,7 @@ function App() {
     </div>
     </VideoState>
     </PhotosState>
-    </NewsState>    
+    </NewsContextProvider>    
     </NavbarState>
 
   );  

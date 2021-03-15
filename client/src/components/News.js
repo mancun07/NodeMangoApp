@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react' 
 import NewsItem from './NewsItem'
-import NewsContext from '../context/news/NewsContext'
+import {NewsContext} from '../context/news/NewsContextProvider'
 
 
 const News = () => {

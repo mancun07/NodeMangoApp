@@ -1,6 +1,6 @@
 import React, {useEffect, useContext} from 'react'
 import {Link} from 'react-router-dom'
-import NewsContext from '../context/news/NewsContext'
+import {NewsContext} from '../context/news/NewsContextProvider'
 
 const SingleNews = ({match}) => {
     const {newsItem, getNewsItem} = useContext(NewsContext)
