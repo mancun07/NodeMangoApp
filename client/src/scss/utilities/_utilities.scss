@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: $secondaryColor;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.btn-primary {
+  background: darken(rgb(14, 0, 0), 5);
+  opacity: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mw-600 {
+  max-width: 600px;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+
+.inline-block {
+  display: inline-block;
+}

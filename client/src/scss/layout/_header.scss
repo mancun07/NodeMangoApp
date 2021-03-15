@@ -1,0 +1,160 @@
+ .navbar-wrapper {
+        background: #333 $mainLinearGradient;
+        height: 70px;
+        width:100%;
+        position: relative;
+        z-index:11;
+    }
+
+.navbar-wrapper__about-us {
+    background: $mainLinearGradient;
+    position: absolute;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        a {
+    color: #fff;
+}
+
+}
+
+.navbar__logo {
+    font-family: 'Righteous', cursive;
+    margin-top:15px;
+}
+
+
+.navbar__nav {
+    flex-basis:65%;
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        font-weight: bold;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+        a {
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            border-bottom: 2px solid green;
+
+        }
+    }
+
+    &__socials {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            padding: 10px 5px;
+            margin: 0 5px;
+        }
+
+        i {
+            &:hover {
+                color: #999;
+            }
+        }
+    }
+}
+
+
+
+.sidenav-trigger {
+    display: none;
+    content: "";
+    background: #fff;
+    height:3px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        background: #fff;
+        height:3px;
+        width: 30px;
+        position: absolute;
+        top:10px;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "";
+        background: #fff;
+        height:3px;
+        width: 30px;
+        position: absolute;
+        bottom:10px;
+        cursor: pointer;
+    }
+}
+
+
+
+.sidenav {
+    height:0;
+    background: transparent;
+    transform: translateX(-1300px);
+    transition: all 0.3s ease;
+    line-height: 2.5;
+    opacity:0;
+    overflow: hidden;
+
+}
+
+.sidenav-is-active {
+    height:100vh;
+    transform: translateX(0);
+    background:#333 $mainLinearGradient;
+    opacity: 0.9;
+    padding:10px;
+    font-size: 20px;
+
+    .sidenav__nav__menu li {
+        display: block;
+    }
+
+    .sidenav__nav__menu a {
+        display: block;
+        color:#fff;
+        border-bottom: 1px #fff solid;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:hover {
+            color: rgba(255, 0, 0, 0.5);
+        }
+    }
+
+    .sidenav__nav__socials li {
+        display: inline-block;
+    }
+
+    .sidenav__nav__socials a {
+        color: #fff;
+        padding-right:15px;
+        font-size: 20px;
+    }
+
+    .sidenav__nav__socials i {
+
+    &:hover {
+        color: rgba(255, 0, 0, 0.5);
+    }
+}
+}

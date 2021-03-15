@@ -1,0 +1,29 @@
+// 1. Variables
+@import 'scss/variables/variables';
+
+// 2. Plugins
+@import 'scss/vendors/plugins';
+
+// 3. Utilities
+@import 'scss/utilities/utilities';
+
+// 4. Layout
+@import 'scss/layout/header';
+@import 'scss/layout/footer';
+
+// 5. Components
+
+// 6. Pages
+@import 'scss/pages/home';
+@import 'scss/pages/news';
+@import 'scss/pages/photos';
+@import 'scss/pages/video';
+@import 'scss/pages/audio';
+@import 'scss/pages/details';
+
+
+
+// 7. Media
+@import 'scss/layout/media';
+
+

@@ -1,0 +1,22 @@
+.details-item {
+  max-width: 600px;
+  padding: 4rem 1rem;
+
+  .news-item__image {
+    height: auto;
+    max-height: 300px;
+    width: 70%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 5px 5px 10px #333;
+
+    &:hover {
+      border-radius: 0 100px 0 100px;
+    }
+  }
+
+  img {
+    height: 100%;
+  }
+}
