@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PhotosContext from './PhotosContext'
+import {v4} from 'uuid'
 import photo1 from '../../img/about1.jpg' // relative path to image 
 import photo2 from '../../img/about2.jpg' // relative path to image 
 import photo3 from '../../img/about3.jpg' // relative path to image 
@@ -19,22 +20,22 @@ const PhotosState = (props) => {
         {
             gallery: 
             [
-        {id: 1, img: photo1 },
-        {id: 2, img: photo2 },
-        {id: 3, img: photo3 },
-        {id: 4, img: photo4 },
-        {id: 5, img: photo5 },
-        {id: 6, img: photo6 },
-        {id: 7, img: photo7 },
-        {id: 8, img: photo8 },
-        {id: 9, img: photo9 },
+        {id: v4(), img: photo1 },
+        {id: v4(), img: photo2 },
+        {id: v4(), img: photo3 },
+        {id: v4(), img: photo4 },
+        {id: v4(), img: photo5 },
+        {id: v4(), img: photo6 },
+        {id: v4(), img: photo7 },
+        {id: v4(), img: photo8 },
+        {id: v4(), img: photo9 },
     ], 
         members:
         [
-        {id: 1, img: member1, desc:'Boris Britva - вокал, гитара' },
-        {id: 2, img: member2, desc:'Боярский Максим - ударные' },
-        {id: 3, img: member3, desc:'Музыченко Дмитрий - бас' },
-        {id: 4, img: member4, desc:'Андрей Лазук - клавишные' },
+        {id: v4(), img: member1, desc:'Boris Britva - вокал, гитара' },
+        {id: v4(), img: member2, desc:'Боярский Максим - ударные' },
+        {id: v4(), img: member3, desc:'Музыченко Дмитрий - бас' },
+        {id: v4(), img: member4, desc:'Андрей Лазук - клавишные' },
         ]
         })
 

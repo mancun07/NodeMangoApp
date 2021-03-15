@@ -5,10 +5,8 @@ import {motion} from 'framer-motion'
 
 const Photos = () => {
     const {photos} = useContext(PhotosContext)
-    //      useEffect(() => {
-    //     document.querySelector('body').classList.remove('news-page');
 
-    // }, [])
+    
     return (
 <main className="photo-page__main">
     <div className="container">

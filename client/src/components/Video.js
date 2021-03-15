@@ -5,10 +5,8 @@ import {motion} from 'framer-motion'
 
 const Video = () => {
     const {video} = useContext(VideoContext)
-    //          useEffect(() => {
-    //          document.querySelector('body').classList.remove('news-page');
 
-    // }, [])
+    
     return (
             <main className="video-page__main">
     <div className="container">

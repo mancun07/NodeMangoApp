@@ -1,40 +1,45 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import throttle from 'lodash/throttle';
 
 const MemberItem = ({member}) => {
+    const revealItem = useRef('');
+    const hideInitially = () => {
+        revealItem.current.classList.add('reveal-item');
+        revealItem.current.isRevealed = false;
+        
+    }
+
 
     useEffect(() => {
-        const revealItem = document.querySelectorAll('.members-item');
-        const hideInitially = () => {
-            revealItem.forEach(el => {
-                el.classList.add('reveal-item');
-                el.isRevealed = false;
-            })
-        }
-        hideInitially()
-        const throttleCalc = throttle(() => calcCaller(), 200);
-    window.addEventListener('scroll', () => throttleCalc());
+        // const revealItem = document.querySelectorAll('.members-item');
+ 
+        hideInitially();
 
-    const calcCaller = () => {
-        revealItem.forEach(el => {
-            if (el.isRevealed === false) {
-                calcTheDistance(el);
+        const throttleCalc = throttle(() => calcCaller(), 200);
+        window.addEventListener('scroll', throttleCalc);
+
+        const calcCaller = () => {
+            if (revealItem.current.isRevealed === false) {
+                calcTheDistance(revealItem.current);
             }
-        })
-    }
-    const calcTheDistance = (el) => {
+       
+        }
+        const calcTheDistance = (el) => {
         let ratio = el.getBoundingClientRect().top / window.innerHeight;
         if (ratio < 0.75) {
             el.classList.add('reveal-item--visible');
             el.isRevealed = true;
         }
     }
+    return () => {
+        window.removeEventListener('scroll', throttleCalc);
+        } 
     }, [])
     
 
 
     return (
-        <div className="members-item">
+        <div ref={revealItem} className="members-item">
             <a href={member.img} data-lightbox="member1" className="members-item__image">
             <img src={member.img} alt=""/>
             </a>
