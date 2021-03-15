@@ -1,19 +1,18 @@
 import React, { useState, createContext } from 'react'
-// import PhotosContext from './PhotosContext'
 import {v4} from 'uuid'
-import photo1 from '../../img/about1.jpg' // relative path to image 
-import photo2 from '../../img/about2.jpg' // relative path to image 
-import photo3 from '../../img/about3.jpg' // relative path to image 
-import photo4 from '../../img/about4.jpg' // relative path to image 
-import photo5 from '../../img/about5.jpg' // relative path to image 
-import photo6 from '../../img/about6.jpg' // relative path to image
-import photo7 from '../../img/concert1.jpg' // relative path to image
-import photo8 from '../../img/concert2.jpg' // relative path to image
-import photo9 from '../../img/concert3.jpg' // relative path to image
-import member1 from '../../img/boris.jpg' // relative path to image
-import member2 from '../../img/maxim.jpg' // relative path to image
-import member3 from '../../img/dima.jpg' // relative path to image
-import member4 from '../../img/andrew.jpg' // relative path to image
+import photo1 from '../../img/about1.jpg' 
+import photo2 from '../../img/about2.jpg'  
+import photo3 from '../../img/about3.jpg'  
+import photo4 from '../../img/about4.jpg'  
+import photo5 from '../../img/about5.jpg'  
+import photo6 from '../../img/about6.jpg' 
+import photo7 from '../../img/concert1.jpg' 
+import photo8 from '../../img/concert2.jpg' 
+import photo9 from '../../img/concert3.jpg' 
+import member1 from '../../img/boris.jpg' 
+import member2 from '../../img/maxim.jpg' 
+import member3 from '../../img/dima.jpg' 
+import member4 from '../../img/andrew.jpg' 
 
 export const PhotosContext = createContext();
 

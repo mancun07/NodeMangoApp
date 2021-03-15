@@ -27,7 +27,7 @@ useEffect(() => {
 
     return (
         <header>
-        <div className={`navbar-wrapper ${changeColor ? 'navbar-wrapper__about-us' : false}`}>
+        <div className={`navbar-wrapper ${changeColor ? 'navbar-wrapper__transparent' : false}`}>
             <div className="container">
                 <div className="navbar">
                     <div className="sidenav-trigger" onClick={toggleMenu}></div>

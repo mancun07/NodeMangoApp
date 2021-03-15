@@ -11,7 +11,6 @@ const MemberItem = ({member}) => {
 
 
     useEffect(() => {
-        // const revealItem = document.querySelectorAll('.members-item');
  
         hideInitially();
 
