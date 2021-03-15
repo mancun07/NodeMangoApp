@@ -4,7 +4,8 @@ import NavbarReducer from './NavbarReducer';
 
 
 const initialState = {
-   transparentColor: false 
+   transparentColor: false,
+   sidenavIsOpened: false
 }
 
 const NavbarContextProvider = (props) => {
@@ -15,11 +16,17 @@ const NavbarContextProvider = (props) => {
             dispatch({type: 'SET_TRANSPARENT'})
       }
 
+      const toggleMenu = () => {
+            dispatch({type: 'TOGGLE_MENU'})
+      }
+
 
    return (
       <NavbarContext.Provider value={{
          transparentColor: state.transparentColor,
-         setTransparentColor
+         sidenavIsOpened: state.sidenavIsOpened,
+         setTransparentColor,
+         toggleMenu
       }
      }>
         {props.children}

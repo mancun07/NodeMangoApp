@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom'
 import {NavbarContext} from '../context/navbar/NavbarContextProvider'
 
 const Navbar = () => {
-    const {transparentColor} = useContext(NavbarContext)
+    const {transparentColor, sidenavIsOpened, toggleMenu} = useContext(NavbarContext)
     const sidenav = useRef(null);
 
 const handleSideMenu = () => {
       if (window.innerWidth > 587) {
-           sidenav.current.classList.remove('sidenav-is-active');
+          toggleMenu()
+        //    sidenav.current.classList.remove('sidenav-is-active');
     }
 }
 
@@ -20,14 +21,10 @@ useEffect(() => {
     } 
 }, [])
    
-    const toggleMenu = () => {
-        sidenav.current.classList.toggle('sidenav-is-active');
-    }
-
 
     return (
         <header>
-        <div className={`navbar-wrapper ${transparentColor ? 'navbar-wrapper__transparent' : false}`}>
+        <div className={`navbar-wrapper ${transparentColor ? 'navbar-wrapper__transparent' : ''}`}>
             <div className="container">
                 <div className="navbar">
                     <div className="sidenav-trigger" onClick={toggleMenu}></div>
@@ -54,7 +51,7 @@ useEffect(() => {
             </div>
         </div>
     
-        <div ref={sidenav} className="sidenav" id="mobile-demo">
+        <div ref={sidenav} className={`sidenav ${sidenavIsOpened ? 'sidenav-is-active' : ''}`} id="mobile-demo">
             <ul className="sidenav__nav__menu">
                 <li><Link to={'/single-page-app'} onClick={toggleMenu}>ГЛАВНАЯ</Link></li>
                 <li><Link to={'/single-page-app/news'} onClick={toggleMenu}>НОВОСТИ</Link></li>
