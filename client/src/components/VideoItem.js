@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import {motion} from 'framer-motion'
 
 const VideoItem = ({item}) => {
@@ -14,5 +15,9 @@ const VideoItem = ({item}) => {
             </div>
     )
 }
+
+VideoItem.propTypes = {
+    item: PropTypes.object
+  };
 
 export default VideoItem

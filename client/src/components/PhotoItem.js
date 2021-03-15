@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const PhotoItem = ({photo}) => {
     return (
@@ -9,5 +10,9 @@ const PhotoItem = ({photo}) => {
    
     )
 }
+
+PhotoItem.propTypes = {
+    photo: PropTypes.object
+  };
 
 export default PhotoItem

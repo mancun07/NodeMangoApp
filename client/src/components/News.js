@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from 'react' 
 import NewsItem from './NewsItem'
+import Loader from './Loader'
 import {NewsContext} from '../context/news/NewsContextProvider'
 
 
 const News = () => {
 
-    const {news, getNews} = useContext(NewsContext)
-    console.log(news)
+    const {news, loading, getNews} = useContext(NewsContext)
 
      useEffect(() => {
          getNews();
@@ -20,12 +20,15 @@ const News = () => {
     return (
         <main className="news-page__main container">
             <section className="news-wrapper">
-                <div className="news">
-                {news && news.length > 0 && news.map(el => {
-                    return <NewsItem key={el._id} el={el}/>
+                {loading ? <Loader/> : (
+                    <div className="news">
+                    {news && news.length > 0 && news.map(el => {
+                        return <NewsItem key={el._id} el={el}/>
+    
+                    })}
+                    </div>
+                )}
 
-                })}
-                </div>
 
             </section>
         </main>

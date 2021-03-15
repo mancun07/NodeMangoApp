@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import throttle from 'lodash/throttle';
+import PropTypes from 'prop-types';
 
 const MemberItem = ({member}) => {
     const revealItem = useRef('');
@@ -49,5 +50,9 @@ const MemberItem = ({member}) => {
 
     )
 }
+
+MemberItem.propTypes = {
+    member: PropTypes.object
+  };
 
 export default MemberItem

@@ -1,12 +1,12 @@
 import React, {useReducer, createContext} from 'react'
 import NewsReducer from './NewsReducer'
-// import NewsContext from './NewsContext'
 
 export const NewsContext = createContext();
 
 const initialState = {
     news: [],
-    newsItem: null
+    newsItem: null,
+    loading: false
 }
 
 const NewsContextProvider = (props) => {
@@ -15,6 +15,8 @@ const NewsContextProvider = (props) => {
 
     const getNews = async () =>  {
         try {
+            console.log('new request to the server')
+            setLoading();
             const res = await fetch('http://localhost:5000/api/v1/articles');
             const data = await res.json();
             dispatch({type: 'GET_NEWS', payload: data.data})
@@ -28,6 +30,7 @@ const NewsContextProvider = (props) => {
 
     const getNewsItem = async (id) => {
         try {
+            setLoading();
             const res = await fetch(`http://localhost:5000/api/v1/articles/${id}`);
             const data = await res.json();
             dispatch({type: 'GET_NEWS_ITEM', payload: data.data})
@@ -36,12 +39,17 @@ const NewsContextProvider = (props) => {
             console.log(err.message)
         }
     }
+
+    const setLoading = () => {
+        dispatch({type: 'SET_LOADING'})
+    }
     
 
  return (
      <NewsContext.Provider value={{
         news: state.news,
         newsItem: state.newsItem,
+        loading: state.loading,
         getNews,
         getNewsItem
 

@@ -3,13 +3,23 @@ const NewsReducer = (state, action) => {
         case 'GET_NEWS':
             return {
                 ...state,
-                news: action.payload
+                news: action.payload,
+                loading: false
             }
         case 'GET_NEWS_ITEM':
             return {
                 ...state,
-                newsItem: action.payload 
+                newsItem: action.payload,
+                loading: false
             }
+
+        case 'SET_LOADING':
+            return {
+                ...state,
+                loading: true 
+            }
+        
+            
 
         default:
                 return state 

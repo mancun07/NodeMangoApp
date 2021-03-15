@@ -8,8 +8,7 @@ const Navbar = () => {
 
 const handleSideMenu = () => {
       if (window.innerWidth > 587) {
-          toggleMenu()
-        //    sidenav.current.classList.remove('sidenav-is-active');
+           sidenav.current.classList.remove('sidenav-is-active');
     }
 }
 

@@ -5,6 +5,7 @@ import {motion} from 'framer-motion'
 
 const Photos = () => {
     const {photos} = useContext(PhotosContext)
+    console.log(photos)
 
 
     return (

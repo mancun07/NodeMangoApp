@@ -1,6 +1,7 @@
 import React, { useReducer, createContext } from 'react'
-export const NavbarContext = createContext();
 import NavbarReducer from './NavbarReducer';
+
+export const NavbarContext = createContext();
 
 
 const initialState = {
