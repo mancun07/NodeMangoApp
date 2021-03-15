@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NewsContextProvider from './context/news/NewsContextProvider'
 import PhotosContextProvider from './context/photos/PhotosContextProvider'
 import VideoState from './context/video/VideoState'
-import NavbarState from './context/navbar/NavbarState'
+import NavbarContextProvider from './context/navbar/NavbarContextProvider'
 
 import Navbar from './components/Navbar'
 import News from './components/News'
@@ -18,7 +18,7 @@ import SingleNews from './components/SingleNews'
 
 function App() {
   return (
-    <NavbarState>
+    <NavbarContextProvider>
     <NewsContextProvider>
     <PhotosContextProvider>
     <VideoState>
@@ -40,7 +40,7 @@ function App() {
     </VideoState>
     </PhotosContextProvider>
     </NewsContextProvider>    
-    </NavbarState>
+    </NavbarContextProvider>
 
   );  
 }

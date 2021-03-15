@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import NavbarContext from '../context/navbar/NavbarContext'
+import {NavbarContext} from '../context/navbar/NavbarContextProvider'
 
 const Navbar = () => {
-    const {changeColor} = useContext(NavbarContext)
+    const {transparentColor} = useContext(NavbarContext)
     const sidenav = useRef(null);
 
 const handleSideMenu = () => {
@@ -27,7 +27,7 @@ useEffect(() => {
 
     return (
         <header>
-        <div className={`navbar-wrapper ${changeColor ? 'navbar-wrapper__transparent' : false}`}>
+        <div className={`navbar-wrapper ${transparentColor ? 'navbar-wrapper__transparent' : false}`}>
             <div className="container">
                 <div className="navbar">
                     <div className="sidenav-trigger" onClick={toggleMenu}></div>

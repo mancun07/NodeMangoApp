@@ -1,18 +1,18 @@
 import React, {useContext, useEffect} from 'react'
 import MySwiper from './MySwiper'
 import {PhotosContext} from '../context/photos/PhotosContextProvider'
-import NavbarContext from '../context/navbar/NavbarContext'
+import {NavbarContext} from '../context/navbar/NavbarContextProvider'
 import MemberItem from './MemberItem'
 
 
 const About = () => {
     const {members} = useContext(PhotosContext)
-    const {setChangeColor} = useContext(NavbarContext)
+    const {setTransparentColor} = useContext(NavbarContext)
      useEffect(() => {
-       setChangeColor(true);
+      setTransparentColor();
 
       return () => {
-            setChangeColor(false);
+        setTransparentColor();
       }
     }, [])
     return (

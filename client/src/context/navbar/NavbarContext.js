@@ -1,5 +1,5 @@
-import { createContext } from 'react';
+// import { createContext } from 'react';
 
-const navbarContext = createContext();
+// const navbarContext = createContext();
 
-export default navbarContext;
+// export default navbarContext;
