@@ -8,13 +8,10 @@ const News = () => {
 
     const {news, loading, getNews} = useContext(NewsContext)
 
-    // useEffect(() => {
-    //      getNews();
-    // }, [])
 
      useEffect(() => {
-         getNews()
-        //  news.length === 0 ? getNews() : false;
+        //  getNews()
+         news.length === 0 ? getNews() : false;
          document.querySelector('body').classList.add('news-page');
 
         return () => {
@@ -27,7 +24,7 @@ const News = () => {
             <section className="news-wrapper">
                 {loading ? <Loader/> : (
                     <div className="news">
-                    {news && news.length > 0 && news.map(el => {
+                    {news && news.map(el => {
                         return <NewsItem key={el._id} el={el}/>
     
                     })}

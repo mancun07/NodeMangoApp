@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 
 const NewsItem = ({el}) => {
-    console.log(el)
     return (
         <div className="news-item">
             <div className="news-item__image">
@@ -21,8 +20,8 @@ const NewsItem = ({el}) => {
     )
 }
 
-// NewsItem.propTypes = {
-//     el: PropTypes.object
-//   };
+NewsItem.propTypes = {
+    el: PropTypes.object
+  };
 
 export default NewsItem

@@ -1,26 +1,18 @@
 import React, {useEffect, useContext} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import Button from './Button';
 import {NewsContext} from '../context/news/NewsContextProvider'
 
 const SingleNews = ({match}) => {
     const {newsItem, getNewsItem} = useContext(NewsContext)
-    let id = match.params.id;
-    // let newsItem = news.find(el => {
-    //     return el._id === id
-    // });
-    // console.log(newsItem)
+    const {id} = useParams();
 
              useEffect(() => {
                 getNewsItem(id)
-        // document.querySelector('body').classList.remove('news-page');
-              return () => {
-                getNewsItem(id)
-              }
+
     }, [id])
     return (
         <>
-        {/* className="btn btn-primary inline-block m-1 p-1"  */}
         {newsItem && (
               <div className="news-item container text-center details-item">
               <Link to={'/news'}>
