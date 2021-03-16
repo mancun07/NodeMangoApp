@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react'
-import VideoContext from '../context/video/VideoContext'
+import {VideoContext} from '../context/video/VideoContextProvider'
 import VideoItem from './VideoItem'
 import {motion} from 'framer-motion'
 

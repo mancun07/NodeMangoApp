@@ -2,7 +2,7 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NewsContextProvider from './context/news/NewsContextProvider'
 import PhotosContextProvider from './context/photos/PhotosContextProvider'
-import VideoState from './context/video/VideoState'
+import VideoContextProvider from './context/video/VideoContextProvider'
 import NavbarContextProvider from './context/navbar/NavbarContextProvider'
 
 import Navbar from './components/Navbar'
@@ -21,7 +21,7 @@ function App() {
     <NavbarContextProvider>
     <NewsContextProvider>
     <PhotosContextProvider>
-    <VideoState>
+    <VideoContextProvider>
     <div className="App">
         <Router>
           <Navbar/>
@@ -37,7 +37,7 @@ function App() {
          </Router>
         <Footer />
     </div>
-    </VideoState>
+    </VideoContextProvider>
     </PhotosContextProvider>
     </NewsContextProvider>    
     </NavbarContextProvider>

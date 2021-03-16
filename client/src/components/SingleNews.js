@@ -1,5 +1,6 @@
 import React, {useEffect, useContext} from 'react'
 import {Link} from 'react-router-dom'
+import Button from './Button';
 import {NewsContext} from '../context/news/NewsContextProvider'
 
 const SingleNews = ({match}) => {
@@ -16,9 +17,12 @@ const SingleNews = ({match}) => {
     }, [id])
     return (
         <>
+        {/* className="btn btn-primary inline-block m-1 p-1"  */}
         {newsItem && (
               <div className="news-item container text-center details-item">
-              <Link to={'/single-page-app/news'} className="btn btn-primary inline-block m-1 p-1" style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}>Вернуться к списку новостей</Link>
+              <Link to={'/single-page-app/news'}>
+                <Button text={'Вернуться к списку новостей'} style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}/>
+              </Link>
               <div className="news-item__image">
                 <img src={`../img/${newsItem._id}.jpg`} alt="one of the news"/>
               </div>

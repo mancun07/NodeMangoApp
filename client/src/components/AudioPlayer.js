@@ -105,30 +105,30 @@ const AudioPlayer = React.memo(() => {
 
 
     return (
-    <div ref={musicContainer} class="music-container">
-        <div class="progress-container">
-            <h2 ref={progressTitle} class="progress-title">{songs[songIndex]}</h2>
-            <div class="progress" onClick={setProgress}>
-                <div ref={progressBar} class="progress-bar"></div>
+    <div ref={musicContainer} className="music-container">
+        <div className="progress-container">
+            <h2 ref={progressTitle} className="progress-title">{songs[songIndex]}</h2>
+            <div className="progress" onClick={setProgress}>
+                <div ref={progressBar} className="progress-bar"></div>
             </div>
         </div>
 
         <audio ref={audio} src={records[songIndex]} ></audio>
 
-        <div class="img-container">
-            <img ref={cover} class="cover" src={images[songIndex]} alt=""/>
+        <div className="img-container">
+            <img ref={cover} className="cover" src={images[songIndex]} alt=""/>
         
         </div>
 
-        <div class="navigation">
-            <button ref={prev} onClick={handlePrevSongs} class="navButton" id="prev">
-                <i class="fas fa-backward fa-2x"></i>
+        <div className="navigation">
+            <button ref={prev} onClick={handlePrevSongs} className="navButton" id="prev">
+                <i className="fas fa-backward fa-2x"></i>
             </button>
-            <button ref={playBtn} onClick={handlePlayStatus} class="navButton" id="play">
-                <i class="fas fa-play fa-2x"></i>
+            <button ref={playBtn} onClick={handlePlayStatus} className="navButton" id="play">
+                <i className="fas fa-play fa-2x"></i>
             </button>
-            <button ref={next} onClick={handleNextSongs} class="navButton" id="next">
-                <i class="fas fa-forward fa-2x"></i>
+            <button ref={next} onClick={handleNextSongs} className="navButton" id="next">
+                <i className="fas fa-forward fa-2x"></i>
             </button>
         </div>
     </div>
