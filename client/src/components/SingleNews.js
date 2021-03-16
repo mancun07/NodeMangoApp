@@ -5,7 +5,6 @@ import {NewsContext} from '../context/news/NewsContextProvider'
 const SingleNews = ({match}) => {
     const {newsItem, getNewsItem} = useContext(NewsContext)
     let id = match.params.id;
-    console.log(id)
     // let newsItem = news.find(el => {
     //     return el._id === id
     // });
@@ -14,7 +13,7 @@ const SingleNews = ({match}) => {
              useEffect(() => {
                 getNewsItem(id)
         // document.querySelector('body').classList.remove('news-page');
-    }, [])
+    }, [id])
     return (
         <>
         {newsItem && (

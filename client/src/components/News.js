@@ -8,8 +8,12 @@ const News = () => {
 
     const {news, loading, getNews} = useContext(NewsContext)
 
+    // useEffect(() => {
+    //      getNews();
+    // }, [])
+
      useEffect(() => {
-         getNews();
+         news.length === 0 ? getNews() : false;
          document.querySelector('body').classList.add('news-page');
 
         return () => {
