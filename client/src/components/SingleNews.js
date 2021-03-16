@@ -23,7 +23,7 @@ const SingleNews = ({match}) => {
         {/* className="btn btn-primary inline-block m-1 p-1"  */}
         {newsItem && (
               <div className="news-item container text-center details-item">
-              <Link to={'/single-page-app/news'}>
+              <Link to={'/news'}>
                 <Button text={'Вернуться к списку новостей'} style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}/>
               </Link>
               <div className="news-item__image">
