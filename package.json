@@ -1,6 +1,5 @@
 {
   "name": "leather-jackets",
-  "homepage": "https://leather-jackets-app.herokuapp.com/single-page-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
