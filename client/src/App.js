@@ -26,12 +26,12 @@ function App() {
         <Router>
           <Navbar/>
           <Switch>
-              <Route exact path={'/single-page-app'} component={About} />
-              <Route exact path={'/single-page-app/news'} component={News} />
-              <Route path={'/single-page-app/photos'} component={Photos} />
-              <Route path={'/single-page-app/video'} component={Video} />
-              <Route path={'/single-page-app/audio'} component={AudioPlayer} />
-              <Route path={'/single-page-app/news/:id'} component={SingleNews} />
+              <Route exact path={'/'} component={About} />
+              <Route exact path={'/news'} component={News} />
+              <Route path={'/photos'} component={Photos} />
+              <Route path={'/video'} component={Video} />
+              <Route path={'/audio'} component={AudioPlayer} />
+              <Route path={'/news/:id'} component={SingleNews} />
           </Switch>
 
          </Router>

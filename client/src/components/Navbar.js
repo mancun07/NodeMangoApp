@@ -31,11 +31,11 @@ useEffect(() => {
                     <nav className="navbar__nav">
                         <div className="navbar__nav__menu">
                             <ul>
-                                <li><Link to={'/single-page-app'}>ГЛАВНАЯ</Link></li>
-                                <li><Link to={'/single-page-app/news'}>НОВОСТИ</Link></li>
-                                <li><Link to={'/single-page-app/photos'}>ФОТО</Link></li>
-                                <li><Link to={'/single-page-app/video'}>ВИДЕО</Link></li>
-                                <li><Link to={'/single-page-app/audio'}>АУДИО</Link></li>
+                                <li><Link to={'/'}>ГЛАВНАЯ</Link></li>
+                                <li><Link to={'/news'}>НОВОСТИ</Link></li>
+                                <li><Link to={'/photos'}>ФОТО</Link></li>
+                                <li><Link to={'/video'}>ВИДЕО</Link></li>
+                                <li><Link to={'/audio'}>АУДИО</Link></li>
                             </ul>
                         </div>
                         <div className="navbar__nav__socials">
@@ -52,11 +52,11 @@ useEffect(() => {
     
         <div ref={sidenav} className={`sidenav ${sidenavIsOpened ? 'sidenav-is-active' : ''}`} id="mobile-demo">
             <ul className="sidenav__nav__menu">
-                <li><Link to={'/single-page-app'} onClick={toggleMenu}>ГЛАВНАЯ</Link></li>
-                <li><Link to={'/single-page-app/news'} onClick={toggleMenu}>НОВОСТИ</Link></li>
-                <li><Link to={'/single-page-app/photos'} onClick={toggleMenu}>ФОТО</Link></li>
-                <li><Link to={'/single-page-app/video'} onClick={toggleMenu}>ВИДЕО</Link></li>
-                <li><Link to={'/single-page-app/audio'} onClick={toggleMenu}>АУДИО</Link></li>
+                <li><Link to={'/'} onClick={toggleMenu}>ГЛАВНАЯ</Link></li>
+                <li><Link to={'/news'} onClick={toggleMenu}>НОВОСТИ</Link></li>
+                <li><Link to={'/photos'} onClick={toggleMenu}>ФОТО</Link></li>
+                <li><Link to={'/video'} onClick={toggleMenu}>ВИДЕО</Link></li>
+                <li><Link to={'/audio'} onClick={toggleMenu}>АУДИО</Link></li>
             </ul>
      
         <ul className="sidenav__nav__socials">

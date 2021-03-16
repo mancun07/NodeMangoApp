@@ -14,7 +14,7 @@ const NewsItem = ({el}) => {
             <div className="news-item__date">{el.date}</div>
             <h2>{el.title}</h2>
             <p>{el.content}</p>
-            <Link to={`/single-page-app/news/${el._id}`}>
+            <Link to={`/news/${el._id}`}>
                 <Button text={'Читать Далее'}  style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}/>
             </Link>
         </div>

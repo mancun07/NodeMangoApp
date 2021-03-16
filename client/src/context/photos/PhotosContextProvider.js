@@ -18,6 +18,7 @@ export const PhotosContext = createContext();
 
 const PhotosContextProvider = (props) => {
     const [photos, setPhotos] = useState(
+        
         {
             gallery: 
             [
