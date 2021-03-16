@@ -24,7 +24,7 @@ const SingleNews = ({match}) => {
                 <Button text={'Вернуться к списку новостей'} style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}/>
               </Link>
               <div className="news-item__image">
-                <img src={`../img/${newsItem._id}.jpg`} alt="one of the news"/>
+                <img src={`/img/${newsItem._id}.jpg`} alt="one of the news"/>
               </div>
               <div className="news-item__date">{newsItem.date}</div>
               <h2>{newsItem.title}</h2>
