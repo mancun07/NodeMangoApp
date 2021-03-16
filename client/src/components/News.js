@@ -13,7 +13,8 @@ const News = () => {
     // }, [])
 
      useEffect(() => {
-         news.length === 0 ? getNews() : false;
+         getNews()
+        //  news.length === 0 ? getNews() : false;
          document.querySelector('body').classList.add('news-page');
 
         return () => {

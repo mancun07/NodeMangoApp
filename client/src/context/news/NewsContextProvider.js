@@ -17,7 +17,7 @@ const NewsContextProvider = (props) => {
         try {
             console.log('new request to the server')
             setLoading();
-            const res = await fetch('http://localhost:5000/api/v1/articles');
+            const res = await fetch('/api/v1/articles');
             const data = await res.json();
             dispatch({type: 'GET_NEWS', payload: data.data})
         }
@@ -31,7 +31,7 @@ const NewsContextProvider = (props) => {
     const getNewsItem = async (id) => {
         try {
             setLoading();
-            const res = await fetch(`http://localhost:5000/api/v1/articles/${id}`);
+            const res = await fetch(`/api/v1/articles/${id}`);
             const data = await res.json();
             dispatch({type: 'GET_NEWS_ITEM', payload: data.data})
         }
