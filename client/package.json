@@ -1,6 +1,5 @@
 {
   "name": "react-app",
-  "homepage": "https://mancun07.github.io/single-page-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
