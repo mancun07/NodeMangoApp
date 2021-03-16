@@ -14,6 +14,9 @@ const SingleNews = ({match}) => {
              useEffect(() => {
                 getNewsItem(id)
         // document.querySelector('body').classList.remove('news-page');
+              return () => {
+                getNewsItem(id)
+              }
     }, [id])
     return (
         <>
