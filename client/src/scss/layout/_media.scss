@@ -15,16 +15,16 @@
   }
 
   .navbar__nav {
-    flex-direction: row;
+    // flex-direction: row;
 
     &__socials {
       display: flex;
       align-items: center;
 
-      ul {
-        justify-content: center;
-        margin: 0;
-      }
+      // ul {
+      //   justify-content: center;
+      //   margin: 0;
+      // }
     }
   }
 }
@@ -57,10 +57,10 @@
     padding: 10px;
   }
 
-  .navbar-wrapper__about-us {
-    position: relative;
-    background: #333 linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%);
-  }
+  // .navbar-wrapper__about-us {
+  //   position: relative;
+  //   background: #333 linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%);
+  // }
 
   .navbar {
     flex-direction: row;
@@ -113,7 +113,7 @@
   }
 
   iframe {
-     max-height: 300px;
+     max-height: 250px;
 
   }
 

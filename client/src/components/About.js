@@ -9,16 +9,17 @@ const About = () => {
     const {members} = useContext(PhotosContext)
     const {setTransparentColor} = useContext(NavbarContext)
      useEffect(() => {
-      setTransparentColor();
+            setTransparentColor();
+
 
       return () => {
         setTransparentColor();
       }
     }, [])
     return (
-        <div>
+        <>
             <MySwiper/>
-            <main className="about-page__main">
+  <main className="about-page__main">
     <div className="container">
         <section className="about-us-wrapper">
           <div className="about-us">
@@ -56,17 +57,17 @@ const About = () => {
       
         </section>
 
-          <section className="members-wrapper">
+        <section className="members-wrapper">
             <div className="members">
               <h1>Участники группы</h1>
                 {members.map(member => {
                     return <MemberItem key={member.id} member={member}/>
                 })}
             </div>
-          </section>
+        </section>
     </div>
   </main>
-        </div>
+        </>
     )
 }
 

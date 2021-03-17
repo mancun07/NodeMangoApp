@@ -12,19 +12,18 @@
 @import 'scss/layout/footer';
 @import 'scss/layout/loader';
 
+
 // 5. Components
-
-// 6. Pages
-@import 'scss/pages/home';
-@import 'scss/pages/news';
-@import 'scss/pages/photos';
-@import 'scss/pages/video';
-@import 'scss/pages/audio';
-@import 'scss/pages/details';
+@import 'scss/components/home';
+@import 'scss/components/news';
+@import 'scss/components/photos';
+@import 'scss/components/video';
+@import 'scss/components/audio';
+@import 'scss/components/singleNews';
 
 
 
-// 7. Media
+// 6. Media
 @import 'scss/layout/media';
 
 

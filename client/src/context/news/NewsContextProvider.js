@@ -3,13 +3,13 @@ import NewsReducer from './NewsReducer'
 
 export const NewsContext = createContext();
 
-const initialState = {
-    news: [],
-    newsItem: null,
-    loading: false
-}
-
 const NewsContextProvider = (props) => {
+
+    const initialState = {
+        news: [],
+        newsItem: null,
+        loading: false
+    }
 
     const [state, dispatch] = useReducer(NewsReducer, initialState);
 

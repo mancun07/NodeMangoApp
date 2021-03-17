@@ -27,7 +27,7 @@ const MemberItem = ({member}) => {
         const calcTheDistance = (el) => {
         let ratio = el.getBoundingClientRect().top / window.innerHeight;
         if (ratio < 0.75) {
-            el.classList.add('reveal-item--visible');
+            el.classList.add('reveal-item_visible');
             el.isRevealed = true;
         }
     }

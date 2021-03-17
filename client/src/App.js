@@ -13,6 +13,7 @@ import About from './components/About'
 import Video from './components/Video'
 import AudioPlayer from './components/AudioPlayer'
 import SingleNews from './components/SingleNews'
+import NoMatch from './components/NoMatch'
 
 
 
@@ -32,6 +33,7 @@ function App() {
               <Route path={'/video'} component={Video} />
               <Route path={'/audio'} component={AudioPlayer} />
               <Route path={'/news/:id'} component={SingleNews} />
+              <Route path={'*'} component={NoMatch} />
           </Switch>
 
          </Router>
