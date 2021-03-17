@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
-const upload = multer({dest: './uploads/'})
 const {getArticles, getSingleArticle, addArticle} = require
 ('../controllers/articlesController');
 const Article = require('../model/jacketsModel');
@@ -16,7 +14,7 @@ router.all('*', function (req, res, next) {
 //get all transactions
 router.route('/')
     .get(getArticles)
-    .post(upload.single(Article.productImage), addArticle)
+    // .post(upload.single(Article.productImage), addArticle)
 
 router.route('/:id')
     .get(getSingleArticle)
