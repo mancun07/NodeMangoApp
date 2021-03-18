@@ -4,30 +4,27 @@
 //     position: relative;
 // }
 
-
 .photos-wrapper {
-    padding: 30px;
-    margin: 30px 0;
+  padding: 30px;
+  margin: 30px 0;
 }
 
 .photos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 
-    .photo-item {
-        flex-basis: 33%;
-        overflow: hidden;
+  .photo-item {
+    // flex-basis: 33%;
+    overflow: hidden;
 
-        img {
-            transition: all 0.3s ease;
+    img {
+      transition: all 0.3s ease;
 
-            &:hover {
-                transform: scale(0.95);
-            }
-        }
+      &:hover {
+        transform: scale(0.95);
+      }
     }
-
+  }
 }
 
 // .footer-bottom {
@@ -36,5 +33,3 @@
 //     bottom: 0;
 
 // }
-
-
