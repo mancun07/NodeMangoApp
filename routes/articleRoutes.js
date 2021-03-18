@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {getArticles, getSingleArticle, addArticle} = require
 ('../controllers/articlesController');
-const Article = require('../model/jacketsModel');
+// const Article = require('../model/jacketsModel');
 
 router.all('*', function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
