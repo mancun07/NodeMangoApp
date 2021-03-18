@@ -110,9 +110,6 @@
   iframe {
     max-height: 250px;
   }
-}
-
-@media (max-width: 587px) {
   .photos {
     grid-template-columns: repeat(2, 6fr);
     grid-template-rows: repeat(5, 200px);
@@ -128,3 +125,20 @@
     }
   }
 }
+
+// @media (max-width: 587px) {
+//   .photos {
+//     grid-template-columns: repeat(2, 6fr);
+//     grid-template-rows: repeat(5, 200px);
+
+//     .photo-item {
+//       &:nth-of-type(odd) {
+//         grid-column: 1 / span 1;
+//       }
+
+//       &:nth-of-type(even) {
+//         grid-column: 2 / span 1;
+//       }
+//     }
+//   }
+// }
