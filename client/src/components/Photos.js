@@ -15,7 +15,7 @@ const Photos = () => {
             <motion.div className="photos"
             initial={{y: '-100vh'}}
             animate={{y: 0}}
-            transition={{duration: 0.5, type: 'spring', stiffness: 300}}
+            transition={{duration: 1, type: 'spring', stiffness: 150}}
             >
             {photos.map(photo => {
                 return <PhotoItem key={photo.id} photo={photo} />
