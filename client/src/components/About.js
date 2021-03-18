@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import MySwiper from './MySwiper'
 import {PhotosContext} from '../context/photos/PhotosContextProvider'
 import {NavbarContext} from '../context/navbar/NavbarContextProvider'

@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react'
+import {useEffect, useContext} from 'react'
 import {Link, useParams} from 'react-router-dom'
 import Button from './Button';
 import {NewsContext} from '../context/news/NewsContextProvider'

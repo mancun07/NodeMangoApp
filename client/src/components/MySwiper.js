@@ -1,4 +1,3 @@
-import React from 'react'
 import concert1 from '../img/concert1.jpg'
 import concert2 from '../img/concert2.jpg'
 import concert3 from '../img/concert3.jpg'

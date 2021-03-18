@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import {PhotosContext} from '../context/photos/PhotosContextProvider'
 import PhotoItem from './PhotoItem'
 import {motion} from 'framer-motion'

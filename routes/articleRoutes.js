@@ -12,9 +12,9 @@ router.all('*', function (req, res, next) {
 });
 
 //get all transactions
-router.route('/')
+router.route('/') 
     .get(getArticles)
-    // .post(upload.single(Article.productImage), addArticle)
+    // .post(addArticle)
 
 router.route('/:id')
     .get(getSingleArticle)
