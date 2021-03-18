@@ -11,10 +11,17 @@
 
 .photos {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-rows: 1.5fr, 1fr, 1fr;
+  gap: 1rem;
 
   .photo-item {
     overflow: hidden;
+
+    // &:first-child {
+    //   grid-column: 2 / span5;
+    //   grid-row: 1 / span2;
+    // }
 
     img {
       transition: all 0.3s ease;
