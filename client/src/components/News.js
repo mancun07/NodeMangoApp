@@ -8,16 +8,15 @@ const News = () => {
 
     const {news, loading, getNews} = useContext(NewsContext)
 
-
-     useEffect(() => {
-        // getNews()
-         news.length === 0 ? getNews() : false;
+    useEffect(() => {
+            news.length === 0 ? getNews() : false;
          document.querySelector('body').classList.add('news-page');
 
         return () => {
         document.querySelector('body').classList.remove('news-page'); 
         }
-    }, [news])
+    }, [])
+
 
     return (
         <main className="news-page__main container">

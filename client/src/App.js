@@ -28,11 +28,12 @@ function App() {
           <Navbar/>
           <Switch>
               <Route exact path={'/'} component={About} />
+
               <Route exact path={'/news'} component={News} />
+                            <Route path={'/news/:id'} component={SingleNews}/>
               <Route path={'/photos'} component={Photos} />
               <Route path={'/video'} component={Video} />
               <Route path={'/audio'} component={AudioPlayer} />
-              <Route path={'/news/:id'} component={SingleNews} />
               <Route path={'*'} component={NoMatch} />
           </Switch>
 
