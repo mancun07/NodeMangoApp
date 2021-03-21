@@ -1,26 +1,45 @@
 // body.video-page {
 //     background: $secondaryColor;
-    
-// }
 
+// }
 
 // .video-page__main {
 //     background:#f1f1f1;
 // }
 
 .video-wrapper {
-    text-align: center;
-    padding:10px;
-    margin-bottom: 30px;
-    color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
-
 .video-item {
-    border-top:  2px solid #fff;
-    padding: 20px 0 50px;
+  border-top: 2px solid #fff;
+  padding: 20px 0 50px;
+  text-align: center;
+
+  //   &__video {
+  //     margin: auto;
+  //     max-width: 640px;
+
+  //     div {
+  //       max-width: 100%;
+  //     }
+  //   }
 }
 
 iframe {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
