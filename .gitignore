@@ -2,11 +2,19 @@
 
 # dependencies
 /node_modules
-/config
+node_modules/
+/config/config.env
+/client/build
+
 /.pnp
 .pnp.js
 .env
 *.env
+
+
+node_modules/
+/config/production.json
+/config/default.json
 
 # testing
 /coverage
