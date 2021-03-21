@@ -2,7 +2,9 @@
 
 # dependencies
 /node_modules
+/config
 node_modules/
+config/
 /config/config.env
 /client/build
 
