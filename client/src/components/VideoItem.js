@@ -10,6 +10,7 @@ const VideoItem = ({item}) => {
                 <div className="player-wrapper">
                 <ReactPlayer 
                           className='react-player'
+                          controls
                           url={item.url}
                           width='100%'
                           height='100%'

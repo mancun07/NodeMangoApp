@@ -19,27 +19,18 @@
   padding: 20px 0 50px;
   text-align: center;
 
-  //   &__video {
-  //     margin: auto;
-  //     max-width: 640px;
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  }
 
-  //     div {
-  //       max-width: 100%;
-  //     }
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  //   iframe {
+  //     max-width: 100%;
   //   }
-}
-
-iframe {
-  max-width: 100%;
-}
-
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
-}
-
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
