@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef, useState, useMemo} from 'react';
 import pic1 from '../img/Annie.jpg';
 import pic2 from '../img/It_was_you.jpg';
 import pic3 from '../img/Slave.jpg';
@@ -27,8 +27,8 @@ const AudioPlayer = React.memo(() => {
         audio.current.addEventListener('timeupdate', updateProgress);
         audio.current.addEventListener('ended', handleNextSongs);
         // return () => {
-        //     console.log(audio.current)
         //     audio.current.removeEventListener('timeupdate', updateProgress);
+        //     audio.current.removeEventListener('ended', handleNextSongs);
         // } 
     }, [])
 
@@ -36,7 +36,6 @@ const AudioPlayer = React.memo(() => {
         const duration = audio.current.duration;
         const currentTime = audio.current.currentTime;
         const percentage = (currentTime / duration) * 100;
-        // console.log(percentage);
         progressBar.current.style.width = `${percentage}%`;
     }
 
@@ -48,7 +47,6 @@ const AudioPlayer = React.memo(() => {
         const offsetByClick = e.nativeEvent.offsetX;
         const duration = audio.current.duration;
         audio.current.currentTime = (offsetByClick/progressWidth) * duration;
-        // console.log(progressWidth, offsetByClick);
 
     }
 

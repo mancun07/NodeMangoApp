@@ -17,16 +17,16 @@ const SingleNews = ({match}) => {
     return (
         <>
         {loading ? <Loader/> : (
-              newsItem && <div className="news-item container text-center details-item">
+              newsItem && <div className="container text-center single-news-item">
               <Link to={'/news'}>
                 <Button text={'Вернуться к списку новостей'} style={{boxShadow: "0px 0px 8px rgb(255, 255, 255)"}}/>
               </Link>
-              <div className="news-item__image">
+              <div className="single-news-item__image">
                 <img src={`/img/${newsItem._id}.jpg`} alt="one of the news"/>
               </div>
-              <div className="news-item__date">{newsItem.date}</div>
+              <div className="single-news-item__date">{newsItem.date}</div>
               <h2>{newsItem.title}</h2>
-              <p>{newsItem.content}</p>
+              <p className="single-news-item__desc">{newsItem.content}</p>
           </div>
         )}
       

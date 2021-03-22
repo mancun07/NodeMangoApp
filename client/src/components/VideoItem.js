@@ -14,6 +14,7 @@ const VideoItem = ({item}) => {
                           url={item.url}
                           width='100%'
                           height='100%'
+                          muted={true}
                 />
                 {/* <div className="video-item__video">
                     <iframe width="789" height="444" src={item.url} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>

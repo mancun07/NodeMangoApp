@@ -1,29 +1,24 @@
 // 1. Variables
-@import 'scss/variables/variables';
-
-// 2. Plugins
-@import 'scss/vendors/plugins';
+@import "scss/variables/variables";
 
 // 3. Utilities
-@import 'scss/utilities/utilities';
+@import "scss/utilities/utilities";
+
+// 2. Plugins
+@import "scss/vendors/plugins";
 
 // 4. Layout
-@import 'scss/layout/header';
-@import 'scss/layout/footer';
-@import 'scss/layout/loader';
-
+@import "scss/layout/header";
+@import "scss/layout/footer";
+@import "scss/layout/loader";
 
 // 5. Components
-@import 'scss/components/home';
-@import 'scss/components/news';
-@import 'scss/components/photos';
-@import 'scss/components/video';
-@import 'scss/components/audio';
-@import 'scss/components/singleNews';
-
-
+@import "scss/components/home";
+@import "scss/components/news";
+@import "scss/components/photos";
+@import "scss/components/video";
+@import "scss/components/audio";
+@import "scss/components/singleNews";
 
 // 6. Media
-@import 'scss/layout/media';
-
-
+@import "scss/layout/media";
