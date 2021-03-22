@@ -1,11 +1,11 @@
 // 1. Variables
 @import "scss/variables/variables";
 
-// 3. Utilities
-@import "scss/utilities/utilities";
-
 // 2. Plugins
 @import "scss/vendors/plugins";
+
+// 3. Utilities
+@import "scss/utilities/utilities";
 
 // 4. Layout
 @import "scss/layout/header";
