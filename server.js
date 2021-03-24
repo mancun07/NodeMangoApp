@@ -1,9 +1,8 @@
 const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv');
-// const connectDB = require('./config/db');
 const mongoose = require('mongoose');
-// require('env2')('config/config.env');
+
 
 const connectDB = async () => {
     try {
