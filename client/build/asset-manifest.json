@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.19418308.chunk.css",
-    "main.js": "/static/js/main.b5f44189.chunk.js",
-    "main.js.map": "/static/js/main.b5f44189.chunk.js.map",
+    "main.css": "/static/css/main.197922df.chunk.css",
+    "main.js": "/static/js/main.4a5407bd.chunk.js",
+    "main.js.map": "/static/js/main.4a5407bd.chunk.js.map",
     "reactPlayerDailyMotion.js": "/static/js/reactPlayerDailyMotion.a7ce0179.chunk.js",
     "reactPlayerDailyMotion.js.map": "/static/js/reactPlayerDailyMotion.a7ce0179.chunk.js.map",
     "reactPlayerFacebook.js": "/static/js/reactPlayerFacebook.2fa75e30.chunk.js",
@@ -38,7 +38,7 @@
     "static/js/16.8a657d50.chunk.js.map": "/static/js/16.8a657d50.chunk.js.map",
     "index.html": "/index.html",
     "static/css/15.ff8d8ad2.chunk.css.map": "/static/css/15.ff8d8ad2.chunk.css.map",
-    "static/css/main.19418308.chunk.css.map": "/static/css/main.19418308.chunk.css.map",
+    "static/css/main.197922df.chunk.css.map": "/static/css/main.197922df.chunk.css.map",
     "static/js/15.72bdbcdb.chunk.js.LICENSE.txt": "/static/js/15.72bdbcdb.chunk.js.LICENSE.txt",
     "static/media/Annie.2cf3beeb.mp3": "/static/media/Annie.2cf3beeb.mp3",
     "static/media/Annie.b441d7cc.jpg": "/static/media/Annie.b441d7cc.jpg",
@@ -53,21 +53,25 @@
     "static/media/about5.f3d3a5f4.jpg": "/static/media/about5.f3d3a5f4.jpg",
     "static/media/about6.de73004d.jpg": "/static/media/about6.de73004d.jpg",
     "static/media/andrew.971da558.jpg": "/static/media/andrew.971da558.jpg",
+    "static/media/andrew2.31a4f25b.jpg": "/static/media/andrew2.31a4f25b.jpg",
     "static/media/boris.438717b9.jpg": "/static/media/boris.438717b9.jpg",
+    "static/media/boris2.cfe92c9d.jpg": "/static/media/boris2.cfe92c9d.jpg",
     "static/media/concert1.fa6796dc.jpg": "/static/media/concert1.fa6796dc.jpg",
     "static/media/concert2.05534f6f.jpg": "/static/media/concert2.05534f6f.jpg",
     "static/media/concert3.a2da20db.jpg": "/static/media/concert3.a2da20db.jpg",
     "static/media/concert4.89b50d70.jpg": "/static/media/concert4.89b50d70.jpg",
     "static/media/concert5.54e52b88.jpg": "/static/media/concert5.54e52b88.jpg",
     "static/media/dima.3d500190.jpg": "/static/media/dima.3d500190.jpg",
+    "static/media/dima2.a4f7709a.jpg": "/static/media/dima2.a4f7709a.jpg",
     "static/media/App.scss": "/static/media/main.83dee1e1.jpg",
-    "static/media/maxim.422ec087.jpg": "/static/media/maxim.422ec087.jpg"
+    "static/media/maxim.422ec087.jpg": "/static/media/maxim.422ec087.jpg",
+    "static/media/maxim2.d4686559.jpg": "/static/media/maxim2.d4686559.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.eac06f65.js",
     "static/css/15.ff8d8ad2.chunk.css",
     "static/js/15.72bdbcdb.chunk.js",
-    "static/css/main.19418308.chunk.css",
-    "static/js/main.b5f44189.chunk.js"
+    "static/css/main.197922df.chunk.css",
+    "static/js/main.4a5407bd.chunk.js"
   ]
 }
