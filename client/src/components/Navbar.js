@@ -34,7 +34,7 @@ useEffect(() => {
                                 <li><Link to={'/'}>ГЛАВНАЯ</Link></li>
                                 <li><Link to={'/news'}>НОВОСТИ</Link></li>
                                 <li><Link to={'/photos'}>ФОТО</Link></li>
-                                <li><Link to={'/video'}>ВИДЕО</Link></li>
+                                {/* <li><Link to={'/video'}>ВИДЕО</Link></li> */}
                                 <li><Link to={'/audio'}>АУДИО</Link></li>
                             </ul>
                         </div>
@@ -55,7 +55,7 @@ useEffect(() => {
                 <li><Link to={'/'} onClick={toggleMenu}>ГЛАВНАЯ</Link></li>
                 <li><Link to={'/news'} onClick={toggleMenu}>НОВОСТИ</Link></li>
                 <li><Link to={'/photos'} onClick={toggleMenu}>ФОТО</Link></li>
-                <li><Link to={'/video'} onClick={toggleMenu}>ВИДЕО</Link></li>
+                {/* <li><Link to={'/video'} onClick={toggleMenu}>ВИДЕО</Link></li> */}
                 <li><Link to={'/audio'} onClick={toggleMenu}>АУДИО</Link></li>
             </ul>
      

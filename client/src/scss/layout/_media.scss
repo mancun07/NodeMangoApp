@@ -114,3 +114,9 @@
     border-bottom: 2px dashed #fff;
   }
 }
+
+@media (min-width: 987px) {
+  .members-item__image:hover .members-item__image__inner {
+    transform: rotateY(180deg);
+  }
+}

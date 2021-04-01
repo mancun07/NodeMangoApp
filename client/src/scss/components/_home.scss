@@ -124,13 +124,9 @@
   }
 }
 
-.members-item__image:hover .members-item__image__inner {
-  transform: rotateY(180deg);
-}
-
 .reveal-item {
   opacity: 0;
-  transform: translateX(-400px);
+  transform: translateX(-100%);
   transition: all 0.8s ease-out;
 }
 

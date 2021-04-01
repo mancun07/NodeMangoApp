@@ -11,9 +11,6 @@
       transition: all 0.3s ease;
       cursor: pointer;
 
-      &:hover {
-        border-radius: 0 100px 0 100px;
-      }
     }
   }
 
@@ -21,11 +18,4 @@
     line-height: 1.8;
   }
 
-  // .single-news-item__date {
-  //   margin-top: 50px;
-  // }
-
-  // img {
-  //   height: 100%;
-  // }
 }
