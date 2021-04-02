@@ -1,6 +1,6 @@
 # NodeMangoApp
 
-Сайт моей группы.
+Проект моей музыкальной группы.
 Управление состоянием с помощью useReducer () и Context API.
 React + Express + MangoDB.
 
