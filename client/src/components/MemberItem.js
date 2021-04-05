@@ -38,10 +38,26 @@ const MemberItem = ({ member }) => {
       <div className="members-item__image">
         <div className="members-item__image__inner">
           <div className="members-item__image__inner__front">
-            <img src={member.img} alt="" />
+            <img
+              src={member.img}
+              style={{
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+              alt="band members"
+            />
           </div>
           <div className="members-item__image__inner__back">
-            <img src={member.img2} alt="" />
+            <img
+              src={member.img2}
+              style={{
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+              alt="band members"
+            />
           </div>
         </div>
       </div>
